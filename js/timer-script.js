@@ -1,5 +1,6 @@
 var counter = 0;
 setInterval(function(){
-    document.body.append("<p>"+String.fromCharCode(counter)+"</p>");
+    var character = String.fromCharCode(counter);
+    document.body.append(character);
     counter++;
 }, 2000);
