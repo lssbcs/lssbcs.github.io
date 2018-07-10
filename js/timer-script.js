@@ -3,4 +3,4 @@ setInterval(function(){
     var character = String.fromCharCode(counter);
     document.body.append(character);
     counter++;
-}, 2000);
+}, 20);
