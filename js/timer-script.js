@@ -1,6 +1,3 @@
-var counter = 0;
-setInterval(function(){
-    var character = String.fromCharCode(counter);
-    document.body.append(character);
-    counter++;
+setTimeout(function(){
+    alert("Hello")
 }, 20);
