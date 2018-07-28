@@ -1,0 +1,126 @@
+#projects_title h2{
+	color: #FFFFFF;
+}
+
+.project_thumb{
+	position: absolute;
+	width: 300px;
+	height: 225px;
+	overflow: hidden;
+	-webkit-transform-style: preserve-3d;
+	        transform-style: preserve-3d;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: -webkit-transform 0.3s;
+	-o-transition: transform 0.3s;
+	transition: transform 0.3s;
+	transition: transform 0.3s, -webkit-transform 0.3s;
+	left: calc(50% - 151px);
+	top: calc(50% - 113.5px);
+	border: solid 1px #272838;
+	cursor: pointer;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+}
+.project_thumb img{
+	max-width: 200%;
+	min-width: 100%;
+	min-height: 100%;
+	max-height: 200%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+}
+.project_thumb .project_thumb_title{
+	position: absolute;
+	left: 0;
+	top: 75%;
+	top: calc(75% - 0.67em);
+	height: 1.33em;
+	width: auto;
+	border-radius: 0px 5px 5px 0px;
+	background-color: #272838;
+	padding: 0px 5px;
+	-webkit-transform: translateX(-100%);
+	    -ms-transform: translateX(-100%);
+	        transform: translateX(-100%);
+}
+.project_thumb_selected_title{
+	-webkit-transition: -webkit-transform 0.4s;
+	transition: -webkit-transform 0.4s;
+	-o-transition: transform 0.4s;
+	transition: transform 0.4s;
+	transition: transform 0.4s, -webkit-transform 0.4s;
+	-webkit-transform: translateX(0%)!important;
+	    -ms-transform: translateX(0%)!important;
+	        transform: translateX(0%)!important;
+}
+.project_thumb_title h4{
+	color: #FFFFFF;
+}
+#gallery_viewer{
+	height: 100%;
+	width: 100%;
+}
+#project_gallery{
+	position: relative;
+	width: 100%;
+	height: 270px;
+}
+#project_border{
+	width: 300px;
+	height: 225px;
+	position: absolute;
+	border: solid 10px #272838;
+	left: calc(50% - 160px);
+	top: calc(50% - 122.5px);
+	border-radius: 5px;
+	-webkit-transform: translateZ(30vw);
+	        transform: translateZ(30vw);
+	z-index: 2;
+}
+#project_wrapper{
+	position: relative;
+	width: 100%;
+	min-height: 500px;
+	overflow: hidden;
+}
+.left_pane{
+	position: relative;
+	min-width: 200px;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+}
+.right_pane{
+	position: relative;
+	min-width: 200px;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+}
+
+.left_panel{
+	position: absolute;
+	left: 20%;
+	width: 25%;
+}
+.right_panel{
+	position: absolute;
+	right:20%;
+	width: 25%;
+}
+.top_panel{
+	top: 0;
+}
+.bottom_panel{
+	bottom: 0;
+}

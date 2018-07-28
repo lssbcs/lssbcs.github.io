@@ -1,0 +1,127 @@
+.burger_bar{
+	position: relative;
+	margin-top: 12px;
+	width: 60px;
+	height: 7px;
+	background-color: #FFFFFF;
+	overflow: hidden;
+	transition: transform 0.15s;	
+}
+.top_mobile_arrow{
+	transform: rotate(45deg);
+}
+.bottom_mobile_arrow{
+	transform: rotate(-45deg);
+}
+.burger_slider{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 0;
+}
+.burger_bar:first-child{
+	margin-top: 0;
+}
+#burger_button{
+	position: absolute;
+	top: 0;
+	left: -100px;
+	width: 60px;
+	padding: 10px;
+	margin-top: 20px;
+	height: 45px;
+	background-color: #272838;
+	cursor: pointer;
+	z-index: 10;
+}
+#mobile_menu{
+	position: fixed;
+	z-index: 5000;
+	top: 0;
+	bottom: 0;
+	right: -80vw;
+	width: 80vw;
+	background-color: #272838;
+}
+.about_burger{
+	background-color: #77B6EA;
+}
+.projects_burger{
+	background-color: #087E8B;;
+}
+.contact_burger{
+	background-color: #A7C6DA;
+}
+.blog_burger{
+	background-color: #70DBDB;
+}
+#mobile_menu_inner{
+	position: absolute;
+	width: 100%;
+	height: 60%;
+	top: 60px;	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.mobile_menu_link{
+	width: 100%;
+	position: relative;
+	flex: 1;
+	cursor: pointer;
+	user-select: none;
+}
+.initial_text{
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+.initial_text h3{
+	color: #FFFFFF;
+}
+.seen_text{
+	overflow: hidden;
+	width: auto;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	overflow: hidden;
+}
+.initial_text h3, .seen_text h3{
+	font-size: 4em;
+	line-height: 1.2em;
+	text-align: center;
+}
+.seen_text h3{
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+}
+#home_mobile_menu .seen_text h3{
+	color: #999999;
+}
+#about_mobile_menu .seen_text h3{
+	color: #77B6EA;
+}
+#projects_mobile_menu .seen_text h3{
+	color: #087E8B;
+}
+#contact_mobile_menu .seen_text h3{
+	color: #A7C6DA;
+}
+#blog_mobile_menu .seen_text h3{
+	color: #A7C6DA;
+}
+#mobile_content_mask{
+	position: fixed;
+	top: -10vh;
+	left: -10vw;
+	width: 120vw;
+	height: 120vh;
+	filter: blur(5px);
+	background-color: rgba(50,50,50,0.8);
+	display: none;
+	z-index: 4999;
+}
